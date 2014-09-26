@@ -33,7 +33,19 @@ angular.module('dataFactory', ['ngResource'])
       isArray: true
     }
     });
-});
+  })
+  .factory('DataItemTactics', function ($resource) {
+    return $resource('/api/itemTatics', {
+      id: '@_id'
+    },
+    {
+      getItemTacticData:{
+      method: 'GET',
+      isArray: true
+    }
+    });
+  });
+
       // catergoryLineChart:{},
       // DiscountLevelData:{},
       // heatmapData:{},
