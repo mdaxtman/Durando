@@ -5,7 +5,8 @@ angular.module('retailDashboardApp', [
   'ngResource',
   'ngSanitize',
   'ui.router',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'DropDowns'
 ])
   .directive('topBar', function() {
     return {
@@ -13,10 +14,10 @@ angular.module('retailDashboardApp', [
       templateUrl: 'components/navbar/navbar.html'
     };
   })
-  .directive('navBar', function() {
+  .directive('dropDowns', function() {
     return {
       restrict: 'E',
-      templateUrl: 'app/nav-bar.html'
+      templateUrl: 'app/data-dropdowns/data-dropdowns.html'
     };
   })
   .directive('mainChart', function() {
