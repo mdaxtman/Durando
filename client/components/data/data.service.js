@@ -35,7 +35,7 @@ angular.module('dataFactory', ['ngResource'])
     });
   })
   .factory('DataItemTactics', function ($resource) {
-    return $resource('/api/itemTatics', {
+    return $resource('/api/itemTactics', {
       id: '@_id'
     },
     {
