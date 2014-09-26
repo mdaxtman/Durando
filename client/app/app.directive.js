@@ -14,7 +14,7 @@ angular.module('retailDashboardApp', [
       templateUrl: 'components/navbar/navbar.html'
     };
   })
-  .directive('dropDowns', function() {
+  .directive('dropdowns', function() {
     return {
       restrict: 'E',
       templateUrl: 'app/data-dropdowns/data-dropdowns.html'
