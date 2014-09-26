@@ -1,21 +1,32 @@
 <div class="navBar" ng-controller="DropDownController">
   <div class="department">
     Department ><br />
-    <select></select>
+    <select>
+      <option value="Dry Grocery">Dry Grocery</option>}
+      option
+    </select>
   </div>
   <div class="category">
     Category ><br />
     <select>
-      <option ng-repeat="category in categories" value={{category.item}} >{{category.item}}</option>}
+      <option value="All">All</option>
+      <option ng-repeat="category in categories" value={{category.item}}>{{category.item}}</option>}
     </select>
   </div>
   <div class="brand">
     Brand ><br />
-    <select></select>
+    <select>
+      <option value="All">All</option>
+      <option ng-repeat="brand in brands" value={{brand.item}}>{{brand.item}}</option>}
+      option
+    </select>
   </div>
   <div class="item">
     Item ><br />
-    [Dropdown]
+    <select>
+      <option value="All">All</option>
+      <option ng-repeat="item in items" value={{item.item}}>{{item.item}}</option>
+    </select>
   </div>
   <div class="item-tactic">
     Item-Tactic ><br />
